@@ -7,7 +7,7 @@ import android.widget.EditText
 import android.widget.Toast
 import android.support.v4.content.ContextCompat.startActivity
 import android.content.Intent
-
+import android.util.Log
 
 
 class MainActivity : AppCompatActivity() {
@@ -34,15 +34,16 @@ class MainActivity : AppCompatActivity() {
             val user_name = et_user_name.text;
             val password = et_password.text;
 
-            if(user_name.trim().equals("") || password.trim().equals("") ){
+            if(user_name.isNullOrEmpty() || password.isNullOrEmpty() ){
                 Toast.makeText(this@MainActivity, "Username and password are required.", Toast.LENGTH_LONG).show()
-            }else {
+            }else if(user_name.toString().equals("Test") && password.toString().equals("password")){
                 val myIntent = Intent(this@MainActivity, LoggedinActivity::class.java)
                 myIntent.putExtra("key", "Welcome " + user_name) //Optional parameters
                 this@MainActivity.startActivity(myIntent)
-
             }
-
+            else {
+                Toast.makeText(this@MainActivity, "Invalid credentials.", Toast.LENGTH_LONG).show()
+            }
         }
     }
 }
