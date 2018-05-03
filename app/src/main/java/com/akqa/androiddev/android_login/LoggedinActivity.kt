@@ -26,12 +26,12 @@ class LoggedinActivity: AppCompatActivity() {
         welcome_msg.setText(value);
 
         // load foods
-        watchList.add(Watch("IW325112", R.drawable.coffee_pot))
-        watchList.add(Watch("IW325342", R.drawable.espresso))
-        watchList.add(Watch("IW325672", R.drawable.french_fries))
-        watchList.add(Watch("IW325370",R.drawable.honey))
-        watchList.add(Watch("IW326554", R.drawable.strawberry_ice_cream))
-        watchList.add(Watch("IW324300", R.drawable.sugar_cubes))
+        watchList.add(Watch("IW325112", R.drawable.iw325112))
+        watchList.add(Watch("IW325342", R.drawable.iw325342))
+        watchList.add(Watch("IW325672", R.drawable.iw325672))
+        watchList.add(Watch("IW325370",R.drawable.iw325370))
+        watchList.add(Watch("IW326554", R.drawable.iw326554))
+        watchList.add(Watch("IW324300", R.drawable.iw324300))
         adapter = WatchAdapter(this, watchList)
 
         gvWatches.adapter = adapter

@@ -12,13 +12,13 @@
             android:id="@+id/imgWatch"
             android:layout_width="150dp"
             android:layout_height="120dp"
-            app:srcCompat="@drawable/french_fries" />
+            app:srcCompat="@drawable/iw325370" />
 
         <TextView
             android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="French Fries"
+            android:text="IW325370"
             android:textSize="20sp" />
 </LinearLayout>
