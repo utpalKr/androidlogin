@@ -9,7 +9,7 @@
     android:padding="15dp">
 
         <ImageView
-            android:id="@+id/imgFood"
+            android:id="@+id/imgWatch"
             android:layout_width="150dp"
             android:layout_height="120dp"
             app:srcCompat="@drawable/french_fries" />

@@ -22,7 +22,15 @@
             android:padding="30dp"
             android:textColor="#696969"
             android:textSize="25dp" />
+
+
+    <GridView
+        android:id="@+id/gvWatches"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="150dp"
+        android:horizontalSpacing="15dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="15dp" />
     </LinearLayout>
-
-
 </android.support.constraint.ConstraintLayout>
