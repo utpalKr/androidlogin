@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import com.akqa.androiddev.R
 import com.javasampleapproach.kotlin.gridview.Watch
 import kotlinx.android.synthetic.main.activity_loggedin.*
 import kotlinx.android.synthetic.main.watch_entry.view.*
@@ -25,7 +26,7 @@ class LoggedinActivity: AppCompatActivity() {
         var welcome_msg = findViewById(R.id.welcome_msg) as TextView
         welcome_msg.setText(value);
 
-        // load foods
+        // load watches
         watchList.add(Watch("IW325112", R.drawable.iw325112))
         watchList.add(Watch("IW325342", R.drawable.iw325342))
         watchList.add(Watch("IW325672", R.drawable.iw325672))
