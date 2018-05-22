@@ -16,10 +16,7 @@ import com.akqa.androiddev.R
 import com.akqa.androiddev.util.ApplicationUtil
 import com.akqa.androiddev.util.ConnectivityReceiver
 import com.akqa.androiddev.util.ConnectivityReceiver.ConnectivityReceiverListener
-import android.R.id.button3
-import android.R.id.button2
-import android.R.id.button1
-import android.content.DialogInterface
+
 
 
 class MainActivity : AppCompatActivity() , ConnectivityReceiverListener {
